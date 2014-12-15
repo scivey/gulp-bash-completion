@@ -3,4 +3,5 @@ node_modules
 *.log
 tmp
 build
+.gulp_tasks~
 
