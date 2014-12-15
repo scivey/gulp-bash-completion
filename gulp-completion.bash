@@ -75,7 +75,7 @@ function __gulp_gulpfile_mtime() {
         $__GULP_COMPLETION_MTIME_COMMAND "${f}.js" | xargs -n 1 expr
     else
         # Suppose that it's a fabfile dir
-        find $fdir/**/*.(js|coffee) -exec $__GULP_COMPLETION_MTIME_COMMAND {} + \
+        find $fdir/**/*.\(js|coffee\) -exec $__GULP_COMPLETION_MTIME_COMMAND {} + \
             | xargs -n 1 expr | sort -nr | head -1
     fi
 }
