@@ -11,6 +11,11 @@ You have to do two things:
 ```
 
 - Copy `gulp-completion.bash` somewhere and source it in your shell.
+In Ubuntu, you can use commands:
+````
+sudo cp node_modules/gulp-bash-completion/gulp-completion.bash /etc/bash_completion.d/gulp
+source ~/.bashrc
+````
 
 ## More Usage
 You can pass in an options object as the second argument to `gulp-bash-completion`'s exported function.  This only takes one option at the moment, `filter`.  It's used to filter tasks out of tab completion.
